@@ -1,1 +1,1 @@
-https://kasiauwu558.github.io
+kasiauwu558.github.io
