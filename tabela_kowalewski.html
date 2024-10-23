@@ -5,10 +5,121 @@
         <title>Tabela Kowalewski</title>
     </head>
 
+    <style>
+        table {
+            border: 3px solid red;
+            border-collapse: collapse;
+            font-family: calibri;
+        }
+        th, td, tr {
+            border: 0.75px solid red;
+        }
+
+        td:nth-child(1) {
+            font-weight: bold;
+            color: rgb(95,73,122);
+        }
+
+        td:nth-child(2) {
+            color: rgb(192,0,0);
+        }
+
+        td:nth-child(4) {
+            color: rgb(99,36,35);
+        }
+
+        td:nth-child(4) {
+            color: rgb(152,72,6);
+        }
+
+        tr:nth-child(-n) {
+            background-color: rgb(194,214,155);
+        }
+
+        tr:nth-child(-n+2) {
+            background-color: rgb(198,217,241);
+        }
+
+        tr:nth-child(n+3) {
+            background-color: rgb(141,179,226);
+        }
+
+        tr:nth-child(n+5) {
+            background-color: rgb(84,141,212);
+        }
+
+        th {
+            background-color: rgb(194,214,155);
+        }
+    </style>
+
     <body>
         <img src="obrazy/tabela.jpg" border="0" width="70" height="50" align="left">
-        <p>Tutaj będzie tabela</p>
         <a href="./index.html">wróć</a>
+
+        <table>
+            <caption>Tabela HTML</caption>
+                <tr>
+                    <td colspan="5" id="tabletitle" style="text-align: center; background-color: rgb(217,149,148); color:black;">Dane Komputerowe - Kowawlewski Adam 2G1</td>
+                </tr>
+
+                <tr>
+                    <th style="color: rgb(95,73,122)">Model karty graficznej</th>
+                    <th style="color: rgb(192,0,0)">Taktowanie bazowe</th>
+                    <th style="color: rgb(99,36,35)">Rozmiar pamięci</th>
+                    <th style="color: rgb(152,72,6)">Szyna pamięci</th>
+                    <th>Typ chłodzenia</th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>RTX 4060</td>
+                    <td>1830 MHz</td>
+                    <td>8 GB</td>
+                    <td>128-bit</td>
+                    <td rowspan="6" style="background-color: rgb(141,179,226);">Aktywne</td>
+                </tr>
+
+                <tr>
+                    <td>GTX 1660 Super</td>
+                    <td>1530 MHz</td>
+                    <td>6 GB</td>
+                    <td>192-bit</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>RX 6600 XT</td>
+                    <td>1968 MHz</td>
+                    <td>8 GB</td>
+                    <td>128-bit</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>RTX 3080</td>
+                    <td>1440 MHz</td>
+                    <td>10 GB</td>
+                    <td>320-bit</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>RX 6800 XT</td>
+                    <td>1825 MHz</td>
+                    <td>16 GB</td>
+                    <td>256-bit</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>RTX 3070</td>
+                    <td>1500 MHz</td>
+                    <td>8 GB</td>
+                    <td>256-bit</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
 
     </body>
 </html>
