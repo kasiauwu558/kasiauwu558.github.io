@@ -1,14 +1,134 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-    <head>
-        <meta charset="utf-8">
-        <title>Formularz Kowalewski</title>
-    </head>
+<html>
 
-    <body>
-        <img src="obrazy/form.png" border="0" width="70" height="50" align="left">
-        <p>Tutaj będzie formularz</p>
+<head>
+    <meta charset="utf-8">
+    <title>Formularz Kowalewski</title>
+</head>
+
+<body bgcolor="pink">
+    <img src="obrazy/form.png" border="0" width="70" height="50" align="left">
         <a href="./index.html">wróć</a>
 
-    </body>
+    <center>
+        <h1> Formularz zgłoszeń na moderatora Discord serwera Avira</h1>
+    </center>
+    <form enctype="text/plain" action="mailto:kasiauwu558@gmail.com" subject="formularz_dane" method="Post">
+        <TABLE>
+            <TR height="100">
+                <TD style="width: 50vw">
+                    <b>Imię</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22">
+                    <br><br>
+
+                    <b>Nazwisko </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp <input name="nazwisko" size="22">
+                    <br><br>
+
+                    <b>Nick Discord </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp <input name="nick_discord" size="22">
+                    <br><br>
+
+                    <b>Adres e-mail</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="email"
+                        size="22">
+                    <br><br>
+
+                    <b>Hasło do panelu </b> &nbsp &nbsp &nbsp&nbsp
+                    &nbsp &nbsp &nbsp <input name="panel_haslo" size="22">
+
+                    <nobr>
+                        <br>
+                </TD>
+                <TD>
+                    <b>Ile masz lat doświadczenia?</b>
+                    <input type="radio" name="lat_doswiadczenia" checked>0
+                    <input type="radio" name="lat_doswiadczenia">1-2
+                    <input type="radio" name="lat_doswiadczenia">3-4
+                    <input type="radio" name="lat_doswiadczenia">5+
+
+                    <br><br><br><br><br>
+                    <b>Na ilu serwerach discord moderowałeś?</b><br>
+                    <input type="radio" name="ilosc_moderowanych_serwerow">0<br>
+                    <input type="radio" name="ilosc_moderowanych_serwerow">1-4<br>
+                    <input type="radio" name="ilosc_moderowanych_serwerow">5+<br>
+
+                </TD>
+            </TR>
+            <TR height="150">
+                <td colspan="2">
+                    <b>Ile członków najwięcej miał serwer, na którym moderowałes?</b>
+                    <input type="radio" name="najwiekszy_serwer">Nie mam doświadczenia
+                    <input type="radio" name="najwiekszy_serwer">>0-1 000
+                    <input type="radio" name="najwiekszy_serwer">>1 000-10 000
+                    <input type="radio" name="najwiekszy_serwer">>10 000-100 000
+                    <input type="radio" name="najwiekszy_serwer">>100 000+
+
+                    <br><br><br>
+                    <b>Jakie twoje cechy sprawdzają się najlepiej w moderacji?</b>
+                    <input type="checkbox" name="cechy">Komunikacja
+                    <input type="checkbox" name="cechy">Kreatywność
+                    <input type="checkbox" name="cechy"checked>Pracowitość
+                    <input type="checkbox" name="cechy">Aktywność
+                    <input type="checkbox" name="cechy">Umiejętność pracy w grupie
+                </td>
+            </TR>
+            <TR height="150">
+                <td>
+                    <b>Jakich botów znasz komendy?</b><br>
+                    <input type="checkbox" name="znajomosc_botow">MEE6<br>
+                    <input type="checkbox" name="znajomosc_botow">UnbelievaBoat<br>
+                    <input type="checkbox" name="znajomosc_botow">Dyno<br>
+                </td>
+                <td>
+                    <b>Jakie typy serwerów moderowałeś?</b><br>
+                    <input type="checkbox" name="typy_serwerow">Gamingowe<br>
+                    <input type="checkbox" name="typy_serwerow">Społecznościowe<br>
+                    <input type="checkbox" name="typy_serwerow">Supportowe<br>
+                    <input type="checkbox" name="typy_serwerow">Inne<br>
+                </td>
+            </TR>
+            <tr height="200">
+                <td colspan="2">
+                    <b>Na jakim poziomie oceniasz swoje zdolności discord?</b>
+                    <select name="ocena_zdolnosci">
+                        <option value="Poczatkujacy">Początkujący</option>
+                        <option value="Sredniozaawansoany">Średniozaawansowany</option>
+                        <option value="Zaawansowany">Zaawansowany</option>
+                        <option value="Ekspert">Ekspert</option>
+                        <option value="Mistrz">Mistrz</option>
+                    </select><br><br><br>
+
+                    <b>Na jakim poziomie oceniasz swoją znajomość zasad serwera i TOS?</b>
+                    <select name="ocena_znajomosci_regulaminu">
+                        <option></option>
+                        <option value="Niski">Niski</option>
+                        <option value="Sredni">Średni</option>
+                        <option value="Wysoki">Wysoki</option>
+                        <option value="Bardzo_wysoki">Bardzo wysoki</option>
+                    </select><br><br><br>
+
+                    <b>Ile masz zamiar spędzać czasu dziennie moderując?</b>
+                    <select name="czas_dziennie">
+                        <option value="1-2h">1-2h</option>
+                        <option value="3-4h">3-4h</option>
+                        <option value="5h+">5h+</option>
+                    </select><br><br><br>
+                </td>
+            </tr>
+            <TR height="100">
+                <TD>
+                    <nobr><input type="reset" value="Reset" style="height:80px; width:150px">
+                </TD>
+                <TD> <input type="submit" value="Wyślij formularz" style="height:80px; width:150px"> </TD>
+            </TR>
+            <tr height="50">
+                <TD><button onclick="alert('A kuku')" style="height:80px;width:300px">Przycisk niespodzianka</button>
+                </TD>
+            </tr>
+        </TABLE>
+    </form>
+</body>
+
 </html>
